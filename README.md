@@ -8,12 +8,12 @@ using namespace std;
 #define FPS 120
 #define TO_RADIANS 3.14/180.0
 
-//  Anggota Kelompok 7
-//  Mohammad Dicky A (672020082)
-//  Yoga Candra A P (672020090)
-//  Restu Indah P (672020097)
-//  Muhammad Wisnu N (672020098)
-//  Liza Widyarini (672020170)
+//  Anggota Kelompok X
+//  Nama (NIM)
+//  Nama (NIM)
+//  Nama (NIM)
+//  Nama (NIM)
+//  Nama (NIM)
 
 const int width = 1280;
 const int height = 720;
@@ -64,7 +64,118 @@ void ground() {
 }
 
 void lantai1() {
+    //depan
+    glPushMatrix();
+    glTranslatef(0, 0, -300);
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-500, 50, -200);
+    glVertex3f(-500, 0, -200);
+    glVertex3f(500, 0, -200);
+    glVertex3f(500, 50, -200);
+    glEnd();
+    glPopMatrix();
 
+    //belakang
+    glPushMatrix();
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-500, 50, 500);
+    glVertex3f(-500, 0, 500);
+    glVertex3f(500, 0, 500);
+    glVertex3f(500, 50, 500);
+    glEnd();
+    glPopMatrix();
+
+    //kiri
+    glPushMatrix();
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-500, 50, -500);
+    glVertex3f(-500, 0, -500);
+    glVertex3f(-500, 0, 500);
+    glVertex3f(-500, 50, 500);
+    glEnd();
+    glPopMatrix();
+
+    //KANAN
+    glPushMatrix();
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(500, 50, -500);
+    glVertex3f(500, 0, -500);
+    glVertex3f(500, 0, 500);
+    glVertex3f(500, 50, 500);
+    glEnd();
+    glPopMatrix();
+
+    //atas
+    glPushMatrix();
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-500, 50, 500);
+    glVertex3f(-500, 50, -500);
+    glVertex3f(500, 50, -500);
+    glVertex3f(500, 50, 500);
+    glEnd();
+    glPopMatrix();
+
+    //lantai2
+    //depan
+    glPushMatrix();
+    glTranslatef(0, 0, 224);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-400, 50, 100);
+    glVertex3f(-400, 300, 100);
+    glVertex3f(400, 300, 100);
+    glVertex3f(400, 50, 100);
+    glEnd();
+    glPopMatrix();
+
+    //belakang
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-400, 50, -450);
+    glVertex3f(-400, 300, -450);
+    glVertex3f(400, 300, -450);
+    glVertex3f(400, 50, -450);
+    glEnd();
+    glPopMatrix();
+
+    //kiri
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-400, 50, -450);
+    glVertex3f(-400, 300, -450);
+    glVertex3f(-400, 300, 325);
+    glVertex3f(-400, 50, 325);
+    glEnd();
+    glPopMatrix();
+
+    //KANAN
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(400, 50, -450);
+    glVertex3f(400, 300, -450);
+    glVertex3f(400, 300, 325);
+    glVertex3f(400, 50, 325);
+    glEnd();
+    glPopMatrix();
+
+    //atas
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-600, 300, -500);
+    glVertex3f(600, 300, -500);
+    glVertex3f(600, 300, 500);
+    glVertex3f(-600, 300, 500);
+    glEnd();
+    glPopMatrix();
 }
 
 void pagar_lantai1() {
@@ -74,8 +185,63 @@ void pagar_lantai1() {
 void draw() {
     // Mulai tuliskan isi pikiranmu disini
     lantai1();
+    //depan
+    glPushMatrix();
+    glTranslatef(0, 0, 224);
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-350, 550, 100);
+    glVertex3f(-350, 300, 100);
+    glVertex3f(350, 300, 100);
+    glVertex3f(350, 550, 100);
+    glEnd();
+    glPopMatrix();
 
+    //belakang
+    glPushMatrix();
+    glColor3f(0.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-350, 550, -400);
+    glVertex3f(-350, 300, -400);
+    glVertex3f(350, 300, -400);
+    glVertex3f(350, 550, -400);
+    glEnd();
+    glPopMatrix();
+
+    //kiri
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-350, 550, -400);
+    glVertex3f(-350, 300, -400);
+    glVertex3f(-350, 300, 330);
+    glVertex3f(-350, 550, 330);
+    glEnd();
+    glPopMatrix();
+
+    //KANAN
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(350, 550, -400);
+    glVertex3f(350, 300, -400);
+    glVertex3f(350, 300, 330);
+    glVertex3f(350, 550, 330);
+    glEnd();
+    glPopMatrix();
+
+    //atas
+    glPushMatrix();
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex3f(-350, 550, -400);
+    glVertex3f(350, 550, -400);
+    glVertex3f(350, 550, 330);
+    glVertex3f(-350, 550, 330);
+    glEnd();
+    glPopMatrix();
     ground();
+    cout << "X_GESER = " << x_geser << "  Y_GESER = " << y_geser << " Z_GESER = " << z_geser << endl;
     glFlush();
 }
 
