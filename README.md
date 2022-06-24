@@ -7,11 +7,11 @@ using namespace std;
 #define TO_RADIANS 3.14/180.0
 
 //  Anggota Kelompok X
-//  Nama (NIM)
-//  Nama (NIM)
-//  Nama (NIM)
-//  Nama (NIM)
-//  Nama (NIM)
+//  Mohammad Dicky Alfarizi (672020082)
+//  Yoga Candra Adi Pratama (672020090)
+//  Restu Indah Pratiwi (672020097)
+//  Muhammad Wisnu Nugroho (672020098)
+//  Liza Widyarini (672020170)
 
 const int width = 1280;
 const int height = 720;
@@ -67,7 +67,7 @@ void lantai() {
         //depan 
         glPushMatrix();
         glTranslatef(0, 0, -300);
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.33f, 0.33f, 0.33f);
         glBegin(GL_POLYGON);
         glVertex3f(-500, 200, -200);
         glVertex3f(-650, 0, -200);
@@ -78,7 +78,7 @@ void lantai() {
 
         //belakang
         glPushMatrix();
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.33f, 0.33f, 0.33f);
         glBegin(GL_POLYGON);
         glVertex3f(-500, 200, 500);
         glVertex3f(-650, 0, 500);
@@ -89,7 +89,7 @@ void lantai() {
 
         //kiri
         glPushMatrix();
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.33f, 0.33f, 0.33f);
         glBegin(GL_POLYGON);
         glVertex3f(-500, 200, -500);
         glVertex3f(-650, 0, -500);
@@ -100,7 +100,7 @@ void lantai() {
 
         //KANAN
         glPushMatrix();
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.33f, 0.33f, 0.33f);
         glBegin(GL_POLYGON);
         glVertex3f(500, 200, -500);
         glVertex3f(650, 0, -500);
@@ -111,7 +111,7 @@ void lantai() {
 
         //atas
         glPushMatrix();
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.33f, 0.33f, 0.33f);
         glBegin(GL_POLYGON);
         glVertex3f(-500, 200, 500);
         glVertex3f(-500, 200, -500);
@@ -125,7 +125,7 @@ void lantai1() {
     //depan
     glPushMatrix();
     glTranslatef(0, 0, 224);
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, 100);
     glVertex3f(-400, 300, 100);
@@ -136,7 +136,7 @@ void lantai1() {
 
     //belakang
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -450);
     glVertex3f(-400, 300, -450);
@@ -147,7 +147,7 @@ void lantai1() {
 
     //kiri
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -450);
     glVertex3f(-400, 300, -450);
@@ -158,7 +158,7 @@ void lantai1() {
 
     //KANAN
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(400, 50, -450);
     glVertex3f(400, 300, -450);
@@ -169,7 +169,7 @@ void lantai1() {
 
     //atas
     glPushMatrix();
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 300, -450);
     glVertex3f(400, 300, -450);
@@ -183,7 +183,7 @@ void atap() {
     //depan 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(1.0f, 0.51f, 0.1f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, 500);
     glVertex3f(-500, 100, 600);
@@ -195,7 +195,7 @@ void atap() {
     //kiri 
     glPushMatrix();
     glTranslatef(0, 500, 119);
-    glColor3f(1.0f, 0.0f, 1.0f);
+    glColor3f(1.0f, 0.51f, 0.1f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -389);
     glVertex3f(-500, 100, -480);
@@ -207,7 +207,7 @@ void atap() {
     //KANAN 
     glPushMatrix();
     glTranslatef(-1, 500, 0);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(1.0f, 0.51f, 0.1f);
     glBegin(GL_POLYGON);
     glVertex3f(400, 50, -272);
     glVertex3f(500, 100, -400);
@@ -219,7 +219,7 @@ void atap() {
     //belakang 
     glPushMatrix();
     glTranslatef(0, 500, 128);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(1.0f, 0.51f, 0.1f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -400);
     glVertex3f(-500, 100, -480);
@@ -233,7 +233,7 @@ void atap_kotak() {
     //depan 
     glPushMatrix();
     glTranslatef(0,510 ,184);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(1.0f, 0.35f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex3f(-500, 30, -200);
     glVertex3f(-500, 0, -200);
@@ -245,7 +245,7 @@ void atap_kotak() {
     //belakang
     glPushMatrix();
     glTranslatef(0, 512, -1474);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(1.0f, 0.35f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex3f(-500, 30, 500);
     glVertex3f(-500, 0, 500);
@@ -257,7 +257,7 @@ void atap_kotak() {
     //kiri
     glPushMatrix();
     glTranslatef(0, 510, -516);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(1.0f, 0.35f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex3f(-500, 30, -460);
     glVertex3f(-500, 0, -460);
@@ -269,7 +269,7 @@ void atap_kotak() {
     //KANAN
     glPushMatrix();
     glTranslatef(0, 513, -515);
-    glColor3f(1.0f, 1.0f, 0.0f);
+    glColor3f(1.0f, 0.35f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex3f(500, 30, -460);
     glVertex3f(500, 0, -460);
@@ -281,7 +281,7 @@ void atap_kotak() {
     //atas
     glPushMatrix();
     glTranslatef(0, 512, -515);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.22, 0.22, 0.22);
     glBegin(GL_POLYGON);
     glVertex3f(-500, 30, 500);
     glVertex3f(-500, 30, -460);
@@ -292,64 +292,61 @@ void atap_kotak() {
 }
 
 
-
-
-
 void lantai2() {
     //lantai2
     //depan 
     glPushMatrix();
     glTranslatef(0, 0, 224);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
-    glVertex3f(-350, 500, 100);
-    glVertex3f(-350, 300, 100);
-    glVertex3f(350, 300, 100);
-    glVertex3f(350, 500, 100);
+    glVertex3f(-350, 500, 40);
+    glVertex3f(-350, 300, 40);
+    glVertex3f(350, 300, 40);
+    glVertex3f(350, 500, 40);
     glEnd();
     glPopMatrix();
 
     //belakang
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
-    glVertex3f(-350, 500, -400);
-    glVertex3f(-350, 300, -400);
-    glVertex3f(350, 300, -400);
-    glVertex3f(350, 500, -400);
+    glVertex3f(-350, 500, -350);
+    glVertex3f(-350, 300, -350);
+    glVertex3f(350, 300, -270);
+    glVertex3f(350, 500, -270);
     glEnd();
     glPopMatrix();
 
     //kiri
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
-    glVertex3f(-350, 500, -400);
-    glVertex3f(-350, 300, -400);
-    glVertex3f(-350, 300, 330);
-    glVertex3f(-350, 500, 330);
+    glVertex3f(-350, 500, -350);
+    glVertex3f(-350, 300, -350);
+    glVertex3f(-350, 300, 270);
+    glVertex3f(-350, 500, 270);
     glEnd();
     glPopMatrix();
 
     //KANAN
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
-    glVertex3f(350, 500, -400);
-    glVertex3f(350, 300, -400);
-    glVertex3f(350, 300, 330);
-    glVertex3f(350, 500, 330);
+    glVertex3f(350, 500, -350);
+    glVertex3f(350, 300, -350);
+    glVertex3f(350, 300, 270);
+    glVertex3f(350, 500, 270);
     glEnd();
     glPopMatrix();
 
     //atas
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
-    glVertex3f(-350, 500, -400);
-    glVertex3f(350, 500, -400);
-    glVertex3f(350, 500, 330);
-    glVertex3f(-350, 500, 330);
+    glVertex3f(-350, 500, -350);
+    glVertex3f(350, 500, -350);
+    glVertex3f(350, 500, 270);
+    glVertex3f(-350, 500, 270);
     glEnd();
     glPopMatrix();
 }
@@ -358,60 +355,60 @@ void atap1() {
     //atap
  //atas 
     glPushMatrix();
-    glTranslatef(0, 250.5, 0);
-    glColor3f(0.0f, 1.0f, 1.0f);
+    glTranslatef(0, 350, 0);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
-    glVertex3f(-450, 300, -500);
-    glVertex3f(450, 300, -500);
-    glVertex3f(450, 300, 500);
-    glVertex3f(-450, 300, 500);
+    glVertex3f(-450, 150, -500);
+    glVertex3f(450, 150, -500);
+    glVertex3f(450, 150, 500);
+    glVertex3f(-450, 150, 500);
     glEnd();
     glPopMatrix();
 
     //kanan
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
-    glVertex3f(450, 50, -500);
-    glVertex3f(300, 120, -170);
-    glVertex3f(300, 120, 170);
-    glVertex3f(450, 50, 500); glEnd();
+    glVertex3f(450, 0, -500);
+    glVertex3f(300, 100, -170);
+    glVertex3f(300, 100, 170);
+    glVertex3f(450, 0, 500); glEnd();
     glPopMatrix();
 
     //kiri 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
-    glVertex3f(-450, 50, -500);
-    glVertex3f(-300, 120, -170);
-    glVertex3f(-300, 120, 170);
-    glVertex3f(-450, 50, 500);
+    glVertex3f(-450, 0, -500);
+    glVertex3f(-300, 100, -170);
+    glVertex3f(-300, 100, 170);
+    glVertex3f(-450, 0, 500);
     glEnd();
     glPopMatrix();
 
     //belakang 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
-    glVertex3f(-450, 50, -500);
-    glVertex3f(-300, 120, -170);
-    glVertex3f(300, 120, -170);
-    glVertex3f(450, 50, -500);
+    glVertex3f(-450, 0, -500);
+    glVertex3f(-300, 100, -170);
+    glVertex3f(300, 100, -170);
+    glVertex3f(450, 0, -500);
     glEnd(); 
     glPopMatrix();
 
     //depan 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
-    glVertex3f(-450, 50, 500);
-    glVertex3f(-300, 120, 170);
-    glVertex3f(300, 120, 170);
-    glVertex3f(450, 50, 500);
+    glVertex3f(-450, 0, 500);
+    glVertex3f(-300, 100, 170);
+    glVertex3f(300, 100, 170);
+    glVertex3f(450, 0, 500);
     glEnd();
     glPopMatrix();
 }
@@ -421,7 +418,7 @@ void lantai3() {
     //dasar
     glPushMatrix();
     glTranslatef(0, 0, 224);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-300, 480, 100);
     glVertex3f(-300, 300, 100);
@@ -432,7 +429,7 @@ void lantai3() {
 
     //belakang
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-300, 480, -300);
     glVertex3f(-300, 300, -300);
@@ -443,7 +440,7 @@ void lantai3() {
 
     //kiri
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-300, 480, -300);
     glVertex3f(-300, 300, -300);
@@ -454,7 +451,7 @@ void lantai3() {
 
     //KANAN
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(300, 480, -300);
     glVertex3f(300, 300, -300);
@@ -465,7 +462,7 @@ void lantai3() {
 
     //atas
     glPushMatrix();
-    glColor3f(0.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-300, 480, -300);
     glVertex3f(300, 480, -300);
@@ -476,11 +473,11 @@ void lantai3() {
 }
 
 void atap2() {
-    //atap lantai 1
+  
        //atas 
     glPushMatrix();
     glTranslatef(0, 250.5, 0);
-    glColor3f(0.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 300, -500);
     glVertex3f(400, 300, -500);
@@ -492,7 +489,7 @@ void atap2() {
     //KANAN 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(400, 50, -500);
     glVertex3f(200, 100, -170);
@@ -503,7 +500,7 @@ void atap2() {
     //kiri 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -500);
     glVertex3f(-200, 100, -170);
@@ -515,7 +512,7 @@ void atap2() {
     //belakang 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, -500);
     glVertex3f(-200, 100, -170);
@@ -526,7 +523,7 @@ void atap2() {
     //depan 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-400, 50, 500);
     glVertex3f(-200, 100, 170);
@@ -541,7 +538,7 @@ void lantai4() {
 //dasar
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(0.0f, 1.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-200, 300, -100);
     glVertex3f(200, 300, -100);
@@ -553,7 +550,7 @@ void lantai4() {
     //kanan 
     glPushMatrix();
     glTranslatef(0, 501, 0);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(200, 450, -100);
     glVertex3f(200, 300, -100);
@@ -565,7 +562,7 @@ void lantai4() {
     //kiri 
     glPushMatrix();
     glTranslatef(0, 501, 0);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-200, 450, -100);
     glVertex3f(-200, 300, -100);
@@ -577,7 +574,7 @@ void lantai4() {
     //depan
     glPushMatrix();
     glTranslatef(0, 501, 0);
-    glColor3f(0.0f, 0.0f, 1.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-200, 450, 300);
     glVertex3f(-200, 300, 300);
@@ -589,7 +586,7 @@ void lantai4() {
     //belakang
     glPushMatrix();
     glTranslatef(-1.5, 502, 151);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-200, 450, -250);
     glVertex3f(-200, 300, -250);
@@ -601,7 +598,7 @@ void lantai4() {
     //atas
     glPushMatrix();
     glTranslatef(0, 502, 0);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(0.95f, 0.95f, 0.95f);
     glBegin(GL_POLYGON);
     glVertex3f(-200, 450, -100);
     glVertex3f(200, 450, -100);
@@ -617,7 +614,7 @@ void atap3() {
     //atas 
     glPushMatrix();
     glTranslatef(0, 250.5, 0);
-    glColor3f(0.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-350, 300, -400);
     glVertex3f(350, 300, -400);
@@ -629,7 +626,7 @@ void atap3() {
     //KANAN 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(0.0f, 1.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(350, 50, -400);
     glVertex3f(175, 200, -170);
@@ -640,7 +637,7 @@ void atap3() {
     //kiri 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-350, 50, -400);
     glVertex3f(-175, 200, -170);
@@ -652,7 +649,7 @@ void atap3() {
     //belakang 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-350, 50, -400);
     glVertex3f(-175, 200, -170);
@@ -664,7 +661,7 @@ void atap3() {
     //depan 
     glPushMatrix();
     glTranslatef(0, 500, 0);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-350, 50, 400);
     glVertex3f(-175, 200, 170);
@@ -676,7 +673,7 @@ void atap3() {
     //atas
     glPushMatrix();
     glTranslatef(0, 650, 0);
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.13f, 0.13f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex3f(-175, 50, 170);
     glVertex3f(-175, 50, -170);
@@ -687,98 +684,94 @@ void atap3() {
 }
 
 
-void pagar_lantai1() {
-
-}
 
 
-void pagar_lantai1depan() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+
+void pagardepan1() {
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 297, 4);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 245, 4);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 297, 4);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 245, 4);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(113, 248, -5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(231, 248, -5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(344, 248, -5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(457, 248, -5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-457, 248, 5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-344, 248, 5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-231, 248, 5);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-113, 248, 5);
     glScalef(0.2, 1.0, 0.1);
@@ -786,94 +779,90 @@ void pagar_lantai1depan() {
     glPopMatrix();
 }
 
-void pagar_lantai1belakang() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+void pagarbelakang1() {
+    
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 297, -989);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 245, -989);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 297, -989);
      glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 245, -989);
     glScalef(3.5, 0.10, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(113, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(231, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(344, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(457, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-113, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-231, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-344, 248, -989);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
    glTranslatef(-457, 248, -989);
     glScalef(0.2, 1.0, 0.1);
@@ -881,51 +870,51 @@ void pagar_lantai1belakang() {
     glPopMatrix();
 }
 
-void pagar_lantai1kiri() {
-    //CAGAK KIRI
-    glColor3f(0.68, 0.1, 0.1);
+void pagarkiri1() {
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -867);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -747);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -632);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -496);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -369);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -242);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-463, 248, -114);
     glScalef(0.2, 1.0, 0.1);
@@ -933,16 +922,15 @@ void pagar_lantai1kiri() {
     glPopMatrix();
 
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-452, 298, -486);
     glScalef(0.2, 0.10, 10);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-452 , 244, -486 );
     glScalef(0.2, 0.10, 10);
@@ -950,51 +938,51 @@ void pagar_lantai1kiri() {
     glPopMatrix();
 }
 
-void pagar_lantai1kanan() {
-    //CAGAK Kanan
-    glColor3f(0.68, 0.1, 0.1);
+void pagarkanan1() {
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -867);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -747);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -632);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -496);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -369);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -242);
     glScalef(0.2, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(463, 248, -114);
     glScalef(0.2, 1.0, 0.1);
@@ -1002,16 +990,16 @@ void pagar_lantai1kanan() {
     glPopMatrix();
 
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(452, 298, -486);
     glScalef(0.2, 0.10, 10);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(452, 244, -486);
     glScalef(0.2, 0.10, 10);
@@ -1020,693 +1008,1703 @@ void pagar_lantai1kanan() {
 
 }
 
-void pagar_lantai2kanan() {
-    //CAGAK Kanan
-    glColor3f(0.68, 0.1, 0.1);
+//  LANTAI 2 PAGAR
+
+void pagardepan2() {
+  
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(463, 248, -867);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(283, 297, 0);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(463, 248, -747);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(283, 245, 0);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+  
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(463, 248, -632);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -496);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -369);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -242);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -114);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(-283, 297, 0);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(452, 298, -486);
-    glScalef(0.2, 0.10, 10);
+    glTranslatef(-283, 245, 0);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(452, 244, -486);
-    glScalef(0.2, 0.10, 10);
+    glTranslatef(88, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(166, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(249, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(330 , 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(412, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(477, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-88, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-166, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-249, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-330, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-412, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-477, 248, -5);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+  
 }
 
-void pagar_lantai2kiri() {
-    //CAGAK KIRI
-    glColor3f(0.68, 0.1, 0.1);
+void pagarkiri2() {
+
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-463, 248, -867);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(-488, 245, -465);
+    glScalef(0.1, 0.07, 9.5);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-463, 248, -747);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -632);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -496);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -369);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -242);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -114);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(-488, 298, -465);
+    glScalef(0.1, 0.07, 9.5);
     glutSolidCube(100);
     glPopMatrix();
 
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-452, 298, -486);
-    glScalef(0.2, 0.10, 10);
+    glTranslatef(-488, 248, -935);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-452, 244, -486);
-    glScalef(0.2, 0.10, 10);
+    glTranslatef(-488, 248, -864);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -793);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -722);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -651);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -580);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -509);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -438);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -367);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -296);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -225);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -154);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -83);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(-488, 248, -12);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+    
+}
+
+void pagarkanan2() {
+
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 245, -465);
+    glScalef(0.1, 0.07, 9.5);
+    glutSolidCube(100);
+    glPopMatrix();
+
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 298, -465);
+    glScalef(0.1, 0.07, 9.5);
+    glutSolidCube(100);
+    glPopMatrix();
+
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -935);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -864);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -793);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -722);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -651);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -580);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -509);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -438);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -367);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -296);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -225);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -154);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -83);
+    glScalef(0.1, 1.0, 0.1);
+    glutSolidCube(100);
+    glPopMatrix();
+
+    glColor3f(1.0, 0.27, 0.0);
+    glPushMatrix();
+    glTranslatef(488, 248, -12);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 }
-
-void pagar_lantai2belakang() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+    void pagarbelakang2(){
+ 
+        glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 297, -989);
-    glScalef(3.5, 0.10, 0.2);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
 
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(283, 245, -989);
-    glScalef(3.5, 0.10, 0.2);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 297, -989);
-    glScalef(3.5, 0.10, 0.2);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
     glTranslatef(-283, 245, -989);
-    glScalef(3.5, 0.10, 0.2);
+    glScalef(4.0, 0.08, 0.2);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
+
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(113, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(88, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(231, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(166, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(344, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(249, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(457, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(330, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-113, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(412, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-231, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(477, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-344, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(-88, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-457, 248, -989);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-}
-
-void pagar_lantai2depan() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(283, 297, 4);
-    glScalef(3.5, 0.10, 0.2);
+    glTranslatef(-166, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(283, 245, 4);
-    glScalef(3.5, 0.10, 0.2);
+    glTranslatef(-249, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-283, 297, 4);
-    glScalef(3.5, 0.10, 0.2);
+    glTranslatef(-330, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(-283, 245, 4);
-    glScalef(3.5, 0.10, 0.2);
+    glTranslatef(-412, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
+    glColor3f(1.0, 0.27, 0.0);
     glPushMatrix();
-    glTranslatef(113, 248, -5);
-    glScalef(0.2, 1.0, 0.1);
+    glTranslatef(-477, 248, -989);
+    glScalef(0.1, 1.0, 0.1);
     glutSolidCube(100);
     glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(231, 248, -5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(344, 248, -5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(457, 248, -5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-457, 248, 5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-344, 248, 5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-231, 248, 5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-113, 248, 5);
-    glScalef(0.2, 1.0, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
 }
 
 
-void dasar1() {
-    //layer lantai merah
-    glColor3f(1.0, 1.0, 1.0);
-    glPushMatrix();
-    glTranslatef(0, 793, -542);
-    glScalef(1.50, 0.01, 2.00);
-    glutSolidCube(500);
-    glPopMatrix();
+    void dasar1() {
+        //layer lantai merah
+        glColor3f(0.22, 0.22, 0.22);
+        glPushMatrix();
+        glTranslatef(0, 952, -542);
+        glScalef(1.45, 0.02, 2.00);
+        glutSolidCube(500);
+        glPopMatrix();
 
-    glColor3f(0.0, 0.0, 0.0);
-    glPushMatrix();
-    glTranslatef(0, 784, -542);
-    glScalef(1.70, 0.01, 2.00);
-    glutSolidCube(500);
-    glPopMatrix();
-}
+        glColor3f(1.0, 1.0, 1.0);
+        glPushMatrix();
+        glTranslatef(0, 945, -542);
+        glScalef(1.60, 0.01, 2.00);
+        glutSolidCube(500);
+        glPopMatrix();
+    }
 
-void pagar_lantai3depan() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(257, 283, 4);
-    glScalef(3.4, 0.07, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+    //LANTAI 3
 
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(257, 245, 4);
-    glScalef(3.4, 0.07, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+    void pagardepan3() {
+     
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(201, 297, -5);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-257, 283, 4);
-    glScalef(3.4, 0.07, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-257, 245, 4);
-    glScalef(3.5, 0.10, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(201, 259, -5);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(89, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(200, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-201, 297, -5);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(329, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(421, 240, -5);
-    glScalef(0.1, 0.8, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-201, 259, -5);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-89, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-200, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(51, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-329, 248, -5);
-    glScalef(0.1, 0.7, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(110, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-421, 240, -5);
-    glScalef(0.1, 0.8, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-}
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(169, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-void pagar_lantai3kiri() {
-    //CAGAK KIRI
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -867);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(228, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -747);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(287, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -632);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(346, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -496);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+ 
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-51, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -369);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-110, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -242);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-169, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-463, 248, -114);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-228, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-452, 283, -486);
-    glScalef(0.2, 0.07, 10);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-287, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-452, 245, -486);
-    glScalef(0.2, 0.07, 10);
-    glutSolidCube(100);
-    glPopMatrix();
-}
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-346, 261, -5);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
 
-void pagar_lantai3belakang() {
-    //DEPAN
-    //pagar atas 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(283, 297, -989);
-    glScalef(3.5, 0.10, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+    void pagarkiri3() {
 
-    //pagar bawah 1 kanan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(283, 245, -989);
-    glScalef(3.5, 0.10, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    //pagar atas 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-283, 297, -989);
-    glScalef(3.5, 0.10, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-486, 243, -515);
+        glScalef(0.08, 0.05, 9.5);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-283, 245, -989);
-    glScalef(3.5, 0.10, 0.2);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-486, 284, -515);
+        glScalef(0.08, 0.05, 9.5);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //CAGAK
-    //CAGAK merah kanan  Depan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(113, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -935);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(231, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -864);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(344, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -793);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(457, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -722);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //CAGAK merah kiri Depan
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-113, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -651);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-231, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -580);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-344, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -509);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(-457, 248, -989);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
-}
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -438);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-void pagar_lantai3kanan() {
-    //CAGAK KIRI
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -867);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -367);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -747);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -296);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -632);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -225);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -496);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -154);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -369);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-488, 248, -83);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+       
+    }
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -242);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
+    void pagarkanan3() {
 
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(463, 248, -114);
-    glScalef(0.1, 0.84, 0.1);
-    glutSolidCube(100);
-    glPopMatrix();
 
-    //pagar atas  kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(452, 283, -486);
-    glScalef(0.2, 0.07, 10);
-    glutSolidCube(100);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(486, 243, -515);
+        glScalef(0.08, 0.05, 9.5);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    //pagar bawah 2 kiri
-    glColor3f(0.68, 0.1, 0.1);
-    glPushMatrix();
-    glTranslatef(452, 245, -486);
-    glScalef(0.2, 0.07, 10);
-    glutSolidCube(100);
-    glPopMatrix();
-}
 
-void dasar2() {
-    //layer lantai merah
-    glColor3f(1.0, 1.0, 1.0);
-    glPushMatrix();
-    glTranslatef(0, 948, -542);
-    glScalef(1.0, 0.01, 2.00);
-    glutSolidCube(500);
-    glPopMatrix();
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(486, 284, -515);
+        glScalef(0.08, 0.05, 9.5);
+        glutSolidCube(100);
+        glPopMatrix();
 
-    glColor3f(0.0, 0.0, 0.0);
-    glPushMatrix();
-    glTranslatef(0, 945, -542);
-    glScalef(1.30, 0.01, 2.00);
-    glutSolidCube(500);
-    glPopMatrix();
-}
 
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -935);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -864);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -793);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -722);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -651);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -580);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -509);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -438);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -367);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -296);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -225);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -154);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(488, 248, -83);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+    }
+
+    void pagarbelakang3() {
+ 
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(201, 297, -980);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(201, 259, -980);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-201, 297, -980);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-201, 259, -980);
+        glScalef(3.0, 0.08, 0.2);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(51, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(110, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(169, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(228, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(287, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(346, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-51, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-110, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-169, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-228, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-287, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-346, 261, -980);
+        glScalef(0.08, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void dasar2() {
+        //layer lantai merah
+        glColor3f(0.22, 0.22, 0.22);
+        glPushMatrix();
+        glTranslatef(0, 952, -542);
+        glScalef(1.05, 0.01, 1.10);
+        glutSolidCube(500);
+        glPopMatrix();
+
+        glColor3f(1.0, 1.0, 1.0);
+        glPushMatrix();
+        glTranslatef(0, 945, -542);
+        glScalef(1.20, 0.01, 1.20);
+        glutSolidCube(500);
+        glPopMatrix();
+    }
+
+    //LANTAI 4
+
+    void pagardepan4() {
+ 
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(6, 297, -80);
+        glScalef(4.5, 0.05, 0.09);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(6, 267, -80);
+        glScalef(4.5, 0.05, 0.09);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(229, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(188, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(147, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(106, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(65, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(24, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+     
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-17, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-58, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-99, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-140, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-181, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-222, 274, -79);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+       
+    }
+
+    void pagarkiri4() {
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-486, 243, -515);
+        glScalef(0.06, 0.05, 5.0);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-486, 275, -515);
+        glScalef(0.06, 0.05, 5.0);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -762);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490 , 238 , -712 );
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -662);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -612);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -562);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -512);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -462);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -412);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -362);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -312);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-490, 238, -262);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void pagarkanan4() {
+
+     
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(486, 243, -515);
+        glScalef(0.06, 0.05, 5.0);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(486, 275, -515);
+        glScalef(0.06, 0.05, 5.0);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -762);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -712);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -662);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -612);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -562);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -512);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -462);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -412);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -362);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -312);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(490, 238, -262);
+        glScalef(0.04, 0.8, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void pagarbelakang4() {
+    
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(6, 297, -600);
+        glScalef(4.5, 0.05, 0.09);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(6, 267, -600);
+        glScalef(4.5, 0.05, 0.09);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(229, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(188, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(147, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(106, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(65, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(24, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-17, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-58, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-99, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-140, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-181, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-222, 274, -600);
+        glScalef(0.04, 0.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+    }
+
+    void tower() {
+        //kotak_tower
+        glColor3f(0.16, 0.27, 0.16);
+        glPushMatrix();
+        glTranslatef(4, 1652, -231.5);
+        glScalef(2, 0.8, 2);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        //bulat_tower
+        glColor3f(0.16, 0.27, 0.16);
+        glPushMatrix();
+        glTranslatef(4, 1652, -231.5);
+        glutSolidSphere(50, 60, 60);
+        glPopMatrix();
+
+        //menara
+        glColor3f(0.16, 0.27, 0.16);
+        glPushMatrix();
+        glTranslatef(4, 1652, -231.5);
+        glScalef(0.15, 10, 0.15);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void dinding() {
+        //pintu 1
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glScalef(1.5, 2.2, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        //pintu3
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-4, 516, -80);
+        glScalef(0.9, 1.1, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        //pintu2
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-5, 273, -118);
+        glScalef(1.3, 1.5, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+    }
+
+    void jendela() {
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void jendela1() {
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void jendela2() {
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void jendela3() {
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
+
+    void jendela4() {
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 86, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, -5, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(232, 37, 18);
+        glScalef(1.2, 0.10, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(176, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(292, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(237, 42, 8);
+        glScalef(0.1, 1.0, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+    }
 
 
 
@@ -1717,7 +2715,6 @@ void draw() {
     glTranslatef(0,0,-499);
     lantai();
     glPopMatrix();
-
 
     glPushMatrix();
     glTranslatef(0, 163, -438);
@@ -1745,7 +2742,6 @@ void draw() {
     atap1();
     glPopMatrix();
 
-
     //lantai3
     glPushMatrix();
     glTranslatef(-2, 470, -526);
@@ -1768,55 +2764,117 @@ void draw() {
     atap3();
     glPopMatrix();
 
-    pagar_lantai1depan();
-    pagar_lantai1belakang();
-    pagar_lantai1kiri();
-    pagar_lantai1kanan();
-    dasar1();
-
-    glPushMatrix();
-    glTranslatef(0, 318, 0);
-    pagar_lantai2kanan();
-    glPopMatrix();
-
-    glPushMatrix();
-    glTranslatef(0, 318 , 0);
-    pagar_lantai2kiri();
-    glPopMatrix();
-
-    glPushMatrix();
-    glTranslatef(0, 318 , 0);
-    pagar_lantai2belakang();
-    glPopMatrix();
+    pagardepan1();
+    pagarkiri1();
+    pagarkanan1();
+    pagarbelakang1();
 
     glPushMatrix();
     glTranslatef(0, 318 , -27);
-    pagar_lantai2depan();
-    glPopMatrix();
-
-
-    glPushMatrix();
-    glTranslatef(0, 584, -82);
-    pagar_lantai3depan();
+    pagardepan2();
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(42, 584, -82);
-    pagar_lantai3kiri();
+    glTranslatef(0, 318, -27);
+    pagarkiri2();
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(42, 584, -82);
-    pagar_lantai3belakang();
+    glTranslatef(0, 318, -27);
+    pagarkanan2();
     glPopMatrix();
-
 
     glPushMatrix();
-    glTranslatef(-30 , 584 , -82 );
-    pagar_lantai3kanan();
+    glTranslatef(0, 318, 27);
+    pagarbelakang2();
+    glPopMatrix();
+   
+    glPushMatrix();
+    glTranslatef(0, -175, 0);
+    dasar1();
     glPopMatrix();
 
+    glPushMatrix();
+    glTranslatef(0, 550, -51);
+    pagardepan3();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(139, 564, -7);
+    pagarkiri3();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-139, 564, -7);
+    pagarkanan3();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(1, 547, -7);
+    pagarbelakang3();
+    glPopMatrix();
+ 
+    glPushMatrix();
+    glTranslatef(0, 23, 0);
     dasar2();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0, 724, -203);
+    pagardepan4();
+    glPopMatrix();
+    
+
+    glPushMatrix();            
+    glTranslatef(268, 745, -13);
+    pagarkiri4();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-256, 745, -13);
+    pagarkanan4();
+    glPopMatrix();
+    
+    glPushMatrix();
+    glTranslatef(0, 724, -176);
+    pagarbelakang4();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-13,-411, -293);
+    tower();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-5, 321, -118);
+    dinding();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-455, 323, -117);
+    jendela();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-455, 641, -229);
+    jendela1();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-38, 641, -229);
+    jendela2();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-38, 832, -218);
+    jendela3();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-426, 832, -218);
+    jendela4();
+    glPopMatrix();
+    
 
     ground();
     cout << "X_GESER = " << x_geser << "  Y_GESER = " << y_geser << " Z_GESER = " << z_geser << endl;
