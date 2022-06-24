@@ -2441,6 +2441,30 @@ void pagarkanan2() {
         glutSolidCube(100);
         glPopMatrix();
 
+        //pintu 4
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-5, -7, -775);
+        glScalef(1.5, 2.2, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        //pintu 5
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(-5, 280 , -702 );
+        glScalef(1.0, 1.2, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        //pintu 6
+        glColor3f(1.0, 0.27, 0.0);
+        glPushMatrix();
+        glTranslatef(12, 512, -714);
+        glScalef(0.9, 1.1, 0.1);
+        glutSolidCube(100);
+        glPopMatrix();
+
 
         glColor3f(1.0, 0.27, 0.0);
         glPushMatrix();
@@ -2706,11 +2730,65 @@ void pagarkanan2() {
         glPopMatrix();
     }
 
+    void tangga() {
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 15);
+        glScalef(2.0, 3.4, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 45);
+        glScalef(2.0, 2.8, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 75);
+        glScalef(2.0, 2.2, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 105);
+        glScalef(2.0, 1.6, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 135);
+        glScalef(2.0, 1.0, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 29, 165);
+        glScalef(2.0, 0.6, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+        glColor3f(0.12, 0.12, 0.12);
+        glPushMatrix();
+        glTranslatef(0, 20, 195);
+        glScalef(2.0, 0.4, 0.3);
+        glutSolidCube(100);
+        glPopMatrix();
+
+
+  
+     
+    }
 
 
 void draw() {
     // Mulai tuliskan isi pikiranmu disini
-    glutWireCube(1000.0);
+
     glPushMatrix();
     glTranslatef(0,0,-499);
     lantai();
@@ -2873,6 +2951,11 @@ void draw() {
     glPushMatrix();
     glTranslatef(-426, 832, -218);
     jendela4();
+    glPopMatrix();
+
+    glPushMatrix();
+
+    tangga();
     glPopMatrix();
     
 
